@@ -1,0 +1,106 @@
+.new {
+    display: flex;
+
+    .newContainer {
+        flex: 6;
+        margin-left: 173px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .top,
+        .bottom {
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            width: 90%;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .top {
+            margin-top: 68px;
+            margin-bottom: 35px;
+
+            h2 {
+                color: lightgray;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+
+            .left {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .right {
+                flex: 3;
+                display: flex;
+                justify-content: space-around;
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .formFile {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 10px;
+                        width: 40%;
+
+                    }
+
+                    .formInput {
+                        display: flex;
+                        flex-direction: column;
+                        // align-items: center;
+                        // gap: 20px;
+                        width: 40%;
+                    }
+
+                    input {
+                        width: 90%;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                        outline: none;
+                    }
+
+                    .formSubmit {
+                        width: 85%;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+
+                        button {
+                            padding: 5px 30px;
+                            background-color: teal;
+                            border: none;
+                            color: white;
+                            font-weight: bold;
+                            cursor: pointer;
+                            border-radius: 5px;
+                        }
+                    }
+
+                }
+
+
+
+            }
+
+        }
+    }
+}

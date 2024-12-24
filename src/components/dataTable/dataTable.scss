@@ -1,0 +1,93 @@
+.dataTable {
+
+    margin: 60px 20px 20px;
+    height: calc(100% - 88px);
+
+    .dataTableTitle{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: gray;
+
+        .new{
+            text-decoration: none;
+            color: green;
+            padding: 5px 15px;
+            border: 2px dashed green;
+            border-radius: 5px;
+            font-size: small;
+            font-weight: bold;
+
+            &:hover{
+                color: #005700;
+                border-color: #005700;
+            }
+        }
+    }
+    .cellWithImg {
+        display: flex;
+        align-items: center;
+
+        .cellImg {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }
+
+    .cellWithStatus {
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: 600;
+
+        &.active {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.151);
+        }
+
+        &.pending {
+            color: #e2a50a;
+            background-color: #f5b10638;
+        }
+
+        &.passive {
+            color: crimson;
+            background-color: rgba(255, 0, 0, 0.05);
+        }
+    }
+
+    .actionBtn {
+        display: flex;
+        gap: 20px;
+
+        .viewAction {
+            border: 2px dotted #00008b98;
+            color: darkblue;
+            padding: 5px;
+            border-radius: 5px;
+            &:hover{
+                background-color: #00008b98;
+                color: white;
+                transition: 0.6s;
+                cursor: pointer;
+            }
+        }
+
+        .deleteAction {
+            border: 2px dotted #dc143cbe;
+            color: crimson;
+            padding: 5px;
+            border-radius: 5px;
+            &:hover{
+                background-color: #dc143cbe;
+                color: white;
+                transition: 0.6s;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

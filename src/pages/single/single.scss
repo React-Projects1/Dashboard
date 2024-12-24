@@ -1,0 +1,61 @@
+.single {
+    display: flex;
+
+    .singleContainer {
+        flex: 6;
+        margin-left: 173px;
+
+        .top {
+            display: flex;
+            gap: 20px;
+            margin: 68px 20px 20px;
+
+            .left {
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                padding: 20px 40px 20px 20px;
+                border-radius: 10px;
+                position: relative;
+                flex: 1;
+
+                small {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    background-color: #7551f841;
+                    padding: 6px;
+                    border-top-right-radius: 10px;
+                    font-weight: 600;
+                    color: #7451f8;
+                }
+
+                .title {
+                    color: gray;
+                }
+
+                .item {
+                    display: flex;
+                    align-items: center;
+
+                    .itemImg {
+                        margin-right: 20px;
+
+                        img {
+                            width: 130px;
+                            height: 130px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                .itemData {
+                    line-height: 1.5;
+                }
+            }
+
+            .right {
+                flex: 2;
+                
+            }
+        }
+    }
+}
